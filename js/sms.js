@@ -34,9 +34,9 @@ class Action {
 const haveCreditsFlow = new Flow([
     new OperMessage("Elija las empresas en las que tuvo préstamos:", null, new Action(Action.showCurrentOffers, null)),
     new OperMessage("¿Cuánto dinero le gustaría recibir?", [
-        new Answer("Hasta 100,000 KZT", null, "amount_select_100"),
-        new Answer("100,000 - 300,000 KZT", null, "amount_select_100-300"),
-        new Answer("Más de 300,000 KZT 💰", null, "amount_select_300+"),
+        new Answer("Hasta 100,000 MXN", null, "amount_select_100"),
+        new Answer("100,000 - 300,000 MXN", null, "amount_select_100-300"),
+        new Answer("Más de 300,000 MXN 💰", null, "amount_select_300+"),
     ], null),
     new OperMessage("¡Excelente! Estoy realizando una verificación automática", null, null),
     new OperMessage("🎉🎁💰 Se ha aprobado preliminarmente el préstamo solicitado. Puede obtenerlo en estas organizaciones:", null, new Action(Action.showOffers, null))
@@ -44,9 +44,9 @@ const haveCreditsFlow = new Flow([
 
 const noCreditsFlow = new Flow([
     new OperMessage("¿Cuánto dinero le gustaría recibir?", [
-        new Answer("Hasta 100,000 KZT", null, "amount_select_100"),
-        new Answer("100,000 - 300,000 KZT", null, "amount_select_100-300"),
-        new Answer("Más de 300,000 KZT 💰", null, "amount_select_300+"),
+        new Answer("Hasta 100,000 MXN", null, "amount_select_100"),
+        new Answer("100,000 - 300,000 MXN", null, "amount_select_100-300"),
+        new Answer("Más de 300,000 MXN 💰", null, "amount_select_300+"),
     ], null),
     new OperMessage("¡Excelente! Estoy realizando una verificación automática", null, null),
     new OperMessage("🎉🎁💰 Se ha aprobado preliminarmente el préstamo solicitado. Puede obtenerlo en estas organizaciones:", null, new Action(Action.showOffers, null))
@@ -55,7 +55,7 @@ const noCreditsFlow = new Flow([
 // Flows
 const mainFlow = new Flow([
     new OperMessage("¡Hola! 👋", null, null),
-    new OperMessage("Me llamo Aruzhan, encontraré para ti la mejor oferta de micropréstamos.", null, null),
+    new OperMessage("Me llamo Andrea, encontraré para ti la mejor oferta de micropréstamos.", null, null),
     new OperMessage("¿Alguna vez has tenido micropréstamos?", [
         new Answer("Sí", new Action(Action.actionChangeFlow, haveCreditsFlow), "have_credits"),
         new Answer("No", new Action(Action.actionChangeFlow, noCreditsFlow), "no_credits"),

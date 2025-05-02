@@ -11,21 +11,19 @@ const moneySymbols = ["💵", "💰", "💸", "💳", "💶", "💷"];
 
 // Динамически загружаем только те оферы, которые есть в массиве offerIdsArray
 const offersData = {
-    10: new Offer(logo="/images/banks/zaimer.png", url="{offer}&offer_id=10", duration="12 meses", interest="0.1%"),
-    12: new Offer(logo="/images/banks/moneymankz.svg", url="{offer}&offer_id=12", duration="30 días", interest="0.01%"),
-    13: new Offer(logo="/images/banks/onecreditkz.svg", url="{offer}&offer_id=13", duration="20 días", interest="0.01%"),
-    14: new Offer(logo="/images/banks/credity360.png", url="{offer}&offer_id=14", duration="30 días", interest="0.01%"),
-    15: new Offer(logo="/images/banks/creditbarkz.svg", url="{offer}&offer_id=15", duration="30 días", interest="0.1%"),
-    16: new Offer(logo="/images/banks/creditpluskz.svg", url="{offer}&offer_id=16", duration="30 días", interest="0.1%"),
-    20: new Offer(logo="/images/banks/acreditkz.png", url="{offer}&offer_id=20", duration="25 días", interest="0.01%"),
-    23: new Offer(logo="/images/banks/turbomoneykz.png", url="{offer}&offer_id=23", duration="20 días", interest="0.1%"),
-    24: new Offer(logo="/images/banks/gmoneykz.svg", url="{offer}&offer_id=24", duration="20 días", interest="0.29%"),
+    58: new Offer(logo="/images/banks/Fiesta-Credito-logo.png.svg", url="{offer}&offer_id=58", duration="hasta 150000$", interest="0.1%"),
+    59: new Offer(logo="/images/banks/Fidea.svg", url="{offer}&offer_id=59", duration="hasta 100000$", interest="0.01%"),
+    60: new Offer(logo="/images/banks/Clicredito.svg", url="{offer}&offer_id=60", duration="hasta 8000$", interest="1.1%"),
+    61: new Offer(logo="/images/banks/holadinerologo.svg", url="{offer}&offer_id=61", duration="hasta 45000$", interest="0.01%"),
+    62: new Offer(logo="/images/banks/creditozen_logo_8aa1f63718.webp.svg", url="{offer}&offer_id=62", duration="hasta 45000$", interest="0.1%"),
+    65: new Offer(logo="/images/banks/Fiesta_cps.png.svg", url="{offer}&offer_id=65", duration="hasta 150000$", interest="0.1%"),
+    66: new Offer(logo="/images/banks/Fidea.svg", url="{offer}&offer_id=66", duration="hasta 100000$", interest="0.01%"),
+    67: new Offer(logo="/images/banks/Clicredito.svg", url="{offer}&offer_id=67", duration="hasta 8000$", interest="0.1%"),
+    68: new Offer(logo="/images/banks/solcreditoMx.svg", url="{offer}&offer_id=68", duration="hasta 12000$", interest="0.1%"),
 
-    21: new Offer(logo="/images/banks/finlitekz.svg", url="{offer}&offer_id=21", duration="30 días", interest="0.01%"),
-    22: new Offer(logo="/images/banks/cashradarkz.svg", url="{offer}&offer_id=22", duration="30 días", interest="0.01%"),
-    25: new Offer(logo="/images/banks/easycashkz.svg", url="{offer}&offer_id=25", duration="60 días", interest="0.1%"),
-    26: new Offer(logo="/images/banks/excashkz.svg", url="{offer}&offer_id=26", duration="180 días", interest="0.1%"),
-    27: new Offer(logo="/images/banks/fincashkz.svg", url="{offer}&offer_id=27", duration="180 días", interest="0.1%"),
+    69: new Offer(logo="/images/banks/dineromonMx.svg", url="{offer}&offer_id=69", duration="hasta 12000$", interest="0.01%"),
+    70: new Offer(logo="/images/banks/kreditweb.png.svg", url="{offer}&offer_id=70", duration="hasta 450000$", interest="0.01%"),
+    71: new Offer(logo="/images/banks/dineria_new_logo.svg", url="{offer}&offer_id=71", duration="hasta 12000$", interest="0.1%"),
 };
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -33,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const urlParams = new URLSearchParams(window.location.search);
     var offersIds = urlParams.get("offers_ids");  // например, "zaimerkz,moneymankz,onecreditkz"
     if (!offersIds) {
-        offersIds="13 21 22 20 10 12 14 16";
+        offersIds="58 59 60 61 62 65 66 67 68 69 70 71";
     }
 
     const offerIdsArray = offersIds.split(' ');
