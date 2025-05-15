@@ -11,19 +11,19 @@ const moneySymbols = ["💵", "💰", "💸", "💳", "💶", "💷"];
 
 // Динамически загружаем только те оферы, которые есть в массиве offerIdsArray
 const offersData = {
-    58: new Offer(logo="/images/banks/Fiesta-Credito-logo.png.svg", url="{offer}&offer_id=58", duration="hasta 150000$", interest="0.1%"),
-    59: new Offer(logo="/images/banks/Fidea.svg", url="{offer}&offer_id=59", duration="hasta 100000$", interest="0.01%"),
-    60: new Offer(logo="/images/banks/Clicredito.svg", url="{offer}&offer_id=60", duration="hasta 8000$", interest="1.1%"),
-    61: new Offer(logo="/images/banks/holadinerologo.svg", url="{offer}&offer_id=61", duration="hasta 45000$", interest="0.01%"),
-    62: new Offer(logo="/images/banks/creditozen_logo_8aa1f63718.webp.svg", url="{offer}&offer_id=62", duration="hasta 45000$", interest="0.1%"),
-    65: new Offer(logo="/images/banks/Fiesta_cps.png.svg", url="{offer}&offer_id=65", duration="hasta 150000$", interest="0.1%"),
-    66: new Offer(logo="/images/banks/Fidea.svg", url="{offer}&offer_id=66", duration="hasta 100000$", interest="0.01%"),
-    67: new Offer(logo="/images/banks/Clicredito.svg", url="{offer}&offer_id=67", duration="hasta 8000$", interest="0.1%"),
-    68: new Offer(logo="/images/banks/solcreditoMx.svg", url="{offer}&offer_id=68", duration="hasta 12000$", interest="0.1%"),
+    58: new Offer(logo="/images/banks/Fiesta-Credito-logo.png.svg", url="{offer}&offer_id=58", duration="150000$", interest="0.1%"),
+    59: new Offer(logo="/images/banks/Fidea.svg", url="{offer}&offer_id=59", duration="100000$", interest="0.01%"),
+    60: new Offer(logo="/images/banks/Clicredito.svg", url="{offer}&offer_id=60", duration="8000$", interest="1.1%"),
+    61: new Offer(logo="/images/banks/holadinerologo.svg", url="{offer}&offer_id=61", duration="45000$", interest="0.01%"),
+    62: new Offer(logo="/images/banks/creditozen_logo_8aa1f63718.webp.svg", url="{offer}&offer_id=62", duration="45000$", interest="0.1%"),
+    65: new Offer(logo="/images/banks/Fiesta_cps.png.svg", url="{offer}&offer_id=65", duration="150000$", interest="0.1%"),
+    66: new Offer(logo="/images/banks/Fidea.svg", url="{offer}&offer_id=66", duration="100000$", interest="0.01%"),
+    67: new Offer(logo="/images/banks/Clicredito.svg", url="{offer}&offer_id=67", duration="8000$", interest="0.1%"),
+    68: new Offer(logo="/images/banks/solcreditoMx.svg", url="{offer}&offer_id=68", duration="12000$", interest="0.1%"),
 
-    69: new Offer(logo="/images/banks/dineromonMx.svg", url="{offer}&offer_id=69", duration="hasta 12000$", interest="0.01%"),
-    70: new Offer(logo="/images/banks/kreditweb.png.svg", url="{offer}&offer_id=70", duration="hasta 450000$", interest="0.01%"),
-    71: new Offer(logo="/images/banks/dineria_new_logo.svg", url="{offer}&offer_id=71", duration="hasta 12000$", interest="0.1%"),
+    69: new Offer(logo="/images/banks/dineromonMx.svg", url="{offer}&offer_id=69", duration="12000$", interest="0.01%"),
+    70: new Offer(logo="/images/banks/kreditweb.png.svg", url="{offer}&offer_id=70", duration="450000$", interest="0.01%"),
+    71: new Offer(logo="/images/banks/dineria_new_logo.svg", url="{offer}&offer_id=71", duration="12000$", interest="0.1%"),
 };
 
 document.addEventListener("DOMContentLoaded", function() {
