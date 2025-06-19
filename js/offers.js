@@ -24,6 +24,12 @@ const offersData = {
     69: new Offer(logo="/images/banks/dineromonMx.svg", url="{offer}&offer_id=69", duration="12000$", interest="0.01%"),
     70: new Offer(logo="/images/banks/kreditweb.png.svg", url="{offer}&offer_id=70", duration="450000$", interest="0.01%"),
     71: new Offer(logo="/images/banks/dineria_new_logo.svg", url="{offer}&offer_id=71", duration="12000$", interest="0.1%"),
+
+    110: new Offer(logo="/images/banks/Credy_1_CPS.svg", url="{offer}&offer_id=111", sa="25000$ ", interest="0.1%"),
+    111: new Offer(logo="/images/banks/andacredito.png.svg", url="{offer}&offer_id=111", sa="20000$", interest="0.01%"),
+    112: new Offer(logo="/images/banks/finloo.png.svg", url="{offer}&offer_id=112", sa="30000 $", interest="1%"),
+    113: new Offer(logo="/images/banks/logo-vivus-mexico.svg", url="{offer}&offer_id=113", sa="25000$", interest="0.01%"),
+    114: new Offer(logo="/images/banks/nice_credit.svg", url="{offer}&offer_id=114", sa="300000$", interest="0.1%"),
 };
 
 document.addEventListener("DOMContentLoaded", function() {
